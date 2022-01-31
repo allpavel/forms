@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus + label {
+    font-weight: bold;
+}
+
+.outerList li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.outerList li label {
+    order: 1;
+}
+
+.outerList li input {
+    order: 2;
+}
+
+.outerList li p {
+    order: 3;
+    color: red;
+}
+
+
+.field {
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    min-width: 600px;
+}
+
+.outerList > li > label {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.outerList > li > label + * {
+    flex: 1 0 220px;
+}
